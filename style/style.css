@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ae8f00;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+header div.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0rem;
+  margin-left: 1rem;
+}
+
+header div.logo img {
+  height: 90px;
+  width: 150px;
+  padding: 0.5rem;
+}
+
+header nav {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: #bb6400;
+}
+
+body main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main section.backimage {
+  background-image: url("../photo/1.jpeg");
+  min-height: 90vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.backimage div.backphoto {
+  background-color: white;
+  opacity: 0.3;
+  min-height: 90vh;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+body main section.backimage div.photoabout {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+body main section.backimage div.photoabout h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+body main section.backimage div.photoabout h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+body main section.page01 {
+  background-color: #ffe056;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
+}
+
+body main section.page01 div.pic2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.page01 div.pic2 img {
+  height: 80vh;
+  width: 40%;
+  padding: 5rem;
+}
+
+body main section.page01 div.pic2 div.font1 h1 {
+  margin-top: 0rem;
+  font-size: 3rem;
+  color: rgba(201, 116, 37, 0.945);
+}
+
+body main section.page01 div.pic2 div.font1 p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+body main section.page01 div.pic2 div.font1 hr {
+  margin: 0.5rem 1rem;
+  color: #726d6d;
+}
+
+body main section.page01 div.pic2 div.font1 h1:hover {
+  color: white;
+}
+
+body section.page2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body section.page2 div.backimage2 {
+  opacity: 0.3;
+  width: 100%;
+  z-index: 5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body section.page2 h1 {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+body section.page2 h1:hover {
+  color: #ffa600;
+}
+
+body section.page2 p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+body section.page2 div.card1 {
+  margin: 5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.page2 div.card1 div.cardtext h1 {
+  font-size: 2rem;
+  margin: 3rem;
+  background-color: wheat;
+  color: #3f3636;
+}
+
+body section.page2 div.card1 div.cardtext h3 {
+  font-size: 1.25rem;
+}
+
+body section.page2 div.card1 div.cardContainer {
+  margin: 0rem 1rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+body section.page2 div.card1 img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+body section.page2 div.card1 img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+div.imgg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.imgg div.picc {
+  width: 400px;
+  height: 400px;
+  margin: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+div.imgg div.picc img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+div.imgg div.picc img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+section.page3 div.backimage2 img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.9;
+}
+
+section.page4 div.carousel-inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.page4 div.carousel-inner div.carousel-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.page4 div.carousel-inner div.carousel-item img {
+  margin-top: 4rem;
+  height: 60vh;
+  width: 400vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #d3bb5a;
+}
+
+section.page4 div.carousel-inner div.carousel-item div.carousel-caption h5 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 2rem;
+}
+
+section.page4 div.carousel-inner div.carousel-item div.carousel-caption p {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #9b8e7c;
+  margin-top: 3rem;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.logo img {
+  margin-top: 4rem;
+  width: 10vw;
+  height: 8vh;
+}
+
+footer div.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.link img {
+  width: 5vh;
+  height: 3vw;
+  margin: 1rem;
+}
+
+footer div.edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  header div.logo img {
+    height: 5vh;
+    width: 30vw;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 10vh;
+    margin: 0rem 2rem;
+    padding: 0;
+  }
+  header nav ul li {
+    padding: 0;
+    margin: 0.03rem 0rem;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  body main section.backimage div.backphoto {
+    width: 100%;
+    height: 100%;
+  }
+  body main section.backimage div.photoabout img {
+    height: 10vh;
+    width: 45vh;
+  }
+  body main section.backimage div.photoabout h1 {
+    font-size: 2rem;
+  }
+  body main section.backimage div.photoabout h2 {
+    font-size: 1.25rem;
+  }
+  body main section.page01 div.pic2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.page01 div.pic2 img {
+    width: 300px;
+    height: 400px;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  body main section.page01 div.pic2 div.font1 h1 {
+    font-size: 2.5rem;
+    padding: 0.5rem 2rem;
+  }
+  body main section.page01 div.pic2 div.font1 p {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+  body main section.page2 h1 {
+    font-size: 2.5rem;
+  }
+  body main section.page2 p {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+  body main section.page2 div.card1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.page2 div.card1 div.cardtext div.cardContainer {
+    width: 250px;
+    height: 250px;
+  }
+  body main section.page2 div.card1 div.cardtext h1 {
+    margin: 1.5rem;
+  }
+  body main section.page2 div.card1 div.cardtext h3 {
+    margin-bottom: 2rem;
+  }
+  body main section.page2 div.card1 div.cardtext img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-items: center;
+  }
+  body main section.page3 div.backimage2 img {
+    height: 30vh;
+    opacity: 0.8;
+  }
+  body footer {
+    background-color: #9b8e7c;
+    margin-top: 3rem;
+  }
+  body footer div.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer div.logo img {
+    width: 25vw;
+    height: 10vh;
+  }
+  body footer div.link img {
+    width: 6vh;
+    height: 10vw;
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
